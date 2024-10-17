@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bright Works</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="lg:min-h-screen manrope mx-auto lg:mx-[135px] py-8 px-4">
+    <!-- hero-section -->
+    <header>
+      <!-- navbar-section -->
+      <nav>
+        <div class="flex justify-between items-center">
+          <div class="flex gap-2 justify-center items-center">
+            <img class="h-[42px] w-[62px]" src="./assets/BW-logo.png" alt="" />
+            <span class="font-extrabold text-2xl">BrightWorks</span>
+          </div>
+
+          <div>
+            <ul class="lg:flex gap-5 text-[#bebcbc] hidden">
+              <li>
+                <a
+                  data-active="true"
+                  onclick="colored(this)"
+                  class="data-[active=true]:text-white data-[active=true]:bg-black rounded-md px-4 py-1 data-[active=false]:text-[#bebcbc]"
+                  href=""
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  data-active="false"
+                  onclick="colored(this)"
+                  class="data-[active=true]:text-white data-[active=true]:bg-black rounded-md px-4 py-1 data-[active=false]:text-[#bebcbc]"
+                  href=""
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  data-active="false"
+                  onclick="colored(this)"
+                  class="data-[active=true]:text-white data-[active=true]:bg-black rounded-md px-4 py-1 data-[active=false]:text-[#bebcbc]"
+                  href=""
+                  >Blogs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button
+              class="text-white bg-black p-3 rounded-xl font-bold text-md hidden lg:flex"
+            >
+              Book Us
+            </button>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8 lg:hidden rounded-full bg-[#edebeb] p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </nav>
+      <!-- banner-section -->
+      <section class="fex flex-col lg:items-center">
+        <div class="mx-auto">
+        <div class="grid gap-8 items-center justify-center">
+          <h3
+            class="text-center pt-[60px] justify-center font-extrabold text-5xl px-[300px]"
+          >
+            Bringing your vision to life with creativity, strategy, and passion
+            for exceptional results
+          </h3>
+          <span class="text-[#9e9c9c] text-center text-xl"
+            >BrightWorks Agency specializes in innovative solutions that elevate
+            brands. We blend creativity and strategy to deliver impactful
+            results tailored to our clients' unique needs.</span
+          >
+          </div>
+          <div class="items-center p-6  lg:mx-auto flex justify-center ">
+            <button
+              class="text-white bg-black p-4 rounded-xl font-bold text-md hidden lg:flex w-full lg:w-auto"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+    </div>
+      </section>
+    </header>
+
+    <script src="js/button.js"></script>
+  </body>
+</html>
